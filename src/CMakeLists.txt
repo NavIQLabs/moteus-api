@@ -1,4 +1,4 @@
-add_library(moteus_api STATIC
+add_library(moteus_api SHARED
     moteus_api.cpp
 )
 
