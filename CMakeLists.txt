@@ -10,11 +10,11 @@ option(BUILD_SCRIPTS  "Build custom script executables" OFF)
 
 # Helper to set per-target runtime dir
 function(set_runtime_dir target outdir)
-    set_target_properties(${target} PROPERTIES
-        RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${outdir}"
-        RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_BINARY_DIR}/${outdir}"
-        RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/${outdir}"
-    )
+  set_target_properties(${target} PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/${outdir}"
+    RUNTIME_OUTPUT_DIRECTORY_DEBUG "${CMAKE_BINARY_DIR}/${outdir}"
+    RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_BINARY_DIR}/${outdir}"
+  )
 endfunction()
 
 # Add subdirs
